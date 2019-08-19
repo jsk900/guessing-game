@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Animated floating numbers start -->
+    <section class="animated-numbers">
+      <div class="set">
+        <div>023423424234</div>
+        <div>12342342344</div>
+        <div>23434343434343434</div>
+        <div>334343434343</div>
+        <div>43434343434</div>
+        <div>578978979797</div>
+        <div>6789789789121</div>
+        <div>77687667867868</div>
+      </div>
+      <div class="set set2">
+        <div>8786786123123132</div>
+        <div>912313213277878</div>
+        <div>10098098098098</div>
+        <div>09080980980980</div>
+        <div>12342342424</div>
+        <div>267676767</div>
+        <div>37678678768</div>
+        <div>467832434234</div>
+      </div>
+      <div class="set set3">
+        <div>53453453453</div>
+        <div>646565656578</div>
+        <div>7123123123080980</div>
+        <div>8132123098098098</div>
+        <div>909809812310983</div>
+        <div>101313209098098</div>
+        <div>612312319989879</div>
+        <div>91321231098098</div>
+      </div>
+    </section>
+    <!-- Animated floating numbers end -->
+
+    <h1>Guessing Game</h1>
+    <section>
+      <div class="instructions">
+        <p>
+          Input a number between 1 and 10.<br />
+          You have three tries to guess the correct number
+        </p>
+      </div>
+      <div class="attempts">
+        <p>Attempts left</p>
+        <p class="count"></p>
+      </div>
+      <div>
+        <form autocomplete="off">
+          <input
+            type="number"
+            name="number"
+            min="1"
+            max="10"
+            value=""
+            placeholder="_"
+            required
+          />
+        </form>
+        <button class="submit">Guess the number</button>
+      </div>
+      <div class="message">
+        <p></p>
+      </div>
+      <div class="attemptsRecord">
+        <p>Your guesses are <span></span></p>
+      </div>
+      <button class="playAgain">Play again</button>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
